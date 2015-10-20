@@ -140,6 +140,7 @@ HEADER STYLES
   width:100%;  
   padding: 1rem;
   z-index: 1;
+  background:#656565;
 }
 
 .header ul.off-canvas-list li {
@@ -156,9 +157,7 @@ HEADER STYLES
   border-radius: 4px;
 }
 
-.home #content, #page-head {
-  margin-top:-100px;
-}
+
 
 
 /*********************
@@ -578,10 +577,10 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  margin-top: 3em; }
+  margin-top: 3em;
+  background: #efefef; }
   
 #inner-footer {
-  border-top:solid 1px #000;
   padding: 1.25rem 0;
  }
 
