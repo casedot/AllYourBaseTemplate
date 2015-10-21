@@ -34,7 +34,25 @@
 		<div class="off-canvas-wrap" data-offcanvas>
 			<div class="inner-wrap">
 				<div id="container" class="<?php global $post; $slug = get_post( $post )->post_name; echo $slug; ?>">
-					<header class="header" role="banner">
+					<div class="toolbar show-for-medium-up contain-to-grid">
+						<div class="row">
+							<div class="large-6 medium-6 columns">
+								<ul class="hlist left">
+									<li><a href="#"><i class="fa fa-home"></i>All Your Base Theme</a></li>
+									<li><a href="#"><i class="fa fa-globe"></i>Global Site</a></li>
+									<li><a href="#">Language <i class="fa fa-angle-double-down"></i></a></li>
+								</ul>
+							</div>
+							<div class="large-6 medium-6 columns">
+								<ul class="hlist right">
+									<li><a href="#"><i class="fa fa-comments"></i>Live Chat</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Get Directions</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<header class="header bg-pier" role="banner">
 							
 						 <!-- This navs will be applied to the topbar, above all content 
 							  To see additional nav styles, visit the /parts directory -->

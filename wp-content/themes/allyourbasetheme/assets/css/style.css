@@ -109,6 +109,8 @@ a:link, a:visited:link {
 		Similar to the :hover selector for mobile devices.
 		*/
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+  
+  
 
 /*********************
 H1, H2, H3, H4, H5 P STYLES
@@ -148,15 +150,66 @@ h6, .normal {
   font-weight:300;
 }
 
+/*********************
+LIST STYLES
+*********************/
+.hlist {
+    display: block;
+    list-style: none;
+    line-height:30px;
+    margin:0;
+    padding:0;
+}    
+.hlist.left { float:left; }
+.hlist.right { float:right; }
+
+.hlist li 
+{
+    display:inline-block;
+    line-height:30px;
+    padding:0;
+    margin:0;
+}
+
+.hlist.left li a { 
+    margin-right:10px;
+    padding-right:10px;
+    border-right:solid 1px #838383; 
+}
+.hlist.right li a { 
+    margin-left:10px;
+    padding-left:10px;
+    border-left:solid 1px #838383; 
+}
+
+.hlist.left li:last-child a { border-right:none; }
+.hlist.right li:first-child a { border-left:none; }
+
 
 /*********************
 HEADER STYLES
 *********************/
+
+.toolbar ul, .toolbar a, .toolbar p {
+    font-size:.7rem;
+}
+
+.toolbar a {
+  color:#838383;
+} 
+.toolbar a:hover, .toolbar a:focus {
+  color:#000;
+} 
+
+.toolbar .fa {
+    font-size:120%;
+    margin-right:4px;
+}
+
 .header {
   width:100%;  
   padding: 1rem;
   z-index: 1;
-  background:#656565;
 }
 
 .header ul.off-canvas-list li {
@@ -594,10 +647,100 @@ FOOTER STYLES
 .footer {
   clear: both;
   margin-top: 3em;
-  background: #efefef; }
+  }
+
+#contact-tools .row {
+  padding:2rem 0;
+  border-top: solid 1px #dadada;
+}
   
+#contact-tools .social {
+    border-right:1px solid #dadada;
+    padding-bottom:1rem;
+}
+#contact-tools .subscribe {
+    border-left:1px solid #dadada;
+    padding-bottom:1rem;
+}
+  
+#contact-tools .newsletter {
+    position:relative;
+}
+   
+#contact-tools .newsletter-form {
+    position:relative;
+    padding:0;
+ 
+}
+
+#contact-tools .newsletter-form .newsletter-name, #contact-tools .newsletter-form .newsletter-email, #contact-tools .newsletter-form .newsletter-send {
+    position:relative;   
+    float:left;
+}
+#contact-tools .newsletter-form .newsletter-name {
+    width:30%;
+    margin-right:2%;
+} 
+#contact-tools .newsletter-form .newsletter-email {
+    width:52%;
+    margin-right:2%;
+}
+#contact-tools .newsletter-form .newsletter-send {
+    width:14%;
+}
+
+#contact-tools .newsletter-form input {
+    border:1px solid #f2f2f2;
+    background: #f2f2f2;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding:8px;
+    margin:0;
+    width: 100%;
+    box-sizing: border-box;
+    line-height:18px;
+}
+#contact-tools .newsletter-form input[type="submit"] {
+    background: #6a6a6a;
+    border:solid 1px #6a6a6a;
+    color: #fff;
+}
+#contact-tools .newsletter-form img.ajax-loader {
+    display: none;
+}
+#contact-tools .newsletter-form div.wpcf7-validation-errors {
+    display:block;
+    float:left;    
+    padding:0 !important;
+    margin:10px 0 0 !important;
+    color: #bf1515;
+    text-align:left;
+    border:none !important;;
+    background:none !important;
+}
+#contact-tools .newsletter-form div.wpcf7-validation-errors:before {
+    font-family: FontAwesome;
+    content: "\f06a";
+    padding-right:5px;
+}
+ 
 #inner-footer {
-  padding: 1.25rem 0;
+  padding: 2rem 0;
+  background: #f2f2f2;  
+ }
+ 
+ #inner-footer ul, #inner-footer a, #inner-footer p {
+   font-size:.8rem;
+   color:#838383;
+ }
+ 
+ #inner-footer a:hover, #inner-footer a:focus {
+   color:#000;
+   text-decoration: underline;
  }
 
 /*********************
@@ -769,7 +912,9 @@ PRINT STYLES
     display: none; } }
 
 
-/********** Simple Classes - mike@fisheyeconsulting.com **********/
+/**********
+Simple Classes
+ **********/
 .bold {
     font-weight: bold;
 }
