@@ -52,7 +52,7 @@
 							</div>
 						</div>
 					</div>
-					<header class="header bg-pier" role="banner">
+					<header class="header" role="banner">
 							
 						 <!-- This navs will be applied to the topbar, above all content 
 							  To see additional nav styles, visit the /parts directory -->

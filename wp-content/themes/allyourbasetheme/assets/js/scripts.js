@@ -1,16 +1,30 @@
 jQuery(document).foundation();
 
-jQuery(document).ready(function(){
-  jQuery('.main-slider').slick({
+jQuery(document).ready(function( $ ){
+  // $('.main-slider').slick({
+  //   autoplay: true,
+  //   autoplaySpeed: 6500,
+  //   dots: false,
+	//   infinite: true,
+  //   draggable: false,
+	//   speed: 420,
+	//   slidesToShow: 1,
+  //   fade: true,
+  //   cssEase: 'linear',
+	//   adaptiveHeight: true
+  // });
+  
+  $('.main-slider').slick({
     autoplay: true,
     autoplaySpeed: 6500,
-    dots: false,
+    dots: true,
 	  infinite: true,
     draggable: false,
 	  speed: 420,
-	  slidesToShow: 1,
-    fade: true,
+	  slidesToShow: 2,
+    slidesToScroll: 2,
     cssEase: 'linear',
-	  adaptiveHeight: true
+	  adaptiveHeight: false
   });
+
 });

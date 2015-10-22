@@ -13,27 +13,22 @@ body, h1, h2, h3, h4, h5, h6, .button, button, .top-bar-section ul li>a {
   font-family: Lato, Verdana, Arial, sans-serif;
 }
 
-.row, .contain-to-grid .top-bar {
+/*.row, .contain-to-grid .top-bar {
   max-width: 76.5rem;
-}
+}*/
 
 .button, button {
-  /*background-color: #c52606;*/
-  color: #fff;
+  background-color: #0078a0;
 }
 .button:focus, .button:hover, button:focus, button:hover {
-  /*background-color: #ab2203;*/
-    color: #fff;
+  background-color: #000;
 }
 
 .button.secondary, button.secondary {
-  background-color: transparent;
-  border: solid 2px #fff;
-  /*color: #F5EE37;*/
-  color:#fff;
+  
 }
 .button.secondary:focus, .button.secondary:hover, button.secondary:focus, button.secondary:hover {
-    background-color: #c52606;
+  background-color: #c52606;
     color: #fff;
 }
 
@@ -55,6 +50,13 @@ BACKGROUND STYLES
 
 .bg-gray { background: #fafafa; }
 .bg-white { background: #fff; }
+
+.bg-gray1 { background: #f1f1f1; }
+.bg-gray2 { background: #eaeaea; }
+.bg-gray3 { background: #e4e4e4; }
+.bg-gray4 { background: #dedede; }
+
+
 
 .dark-pattern {
   background: url(../images/patterns/stressed_linen.png) repeat;
@@ -210,6 +212,7 @@ HEADER STYLES
   width:100%;  
   padding: 1rem;
   z-index: 1;
+  background: #656565;
 }
 
 .header ul.off-canvas-list li {
@@ -287,32 +290,15 @@ HOMEPAGE STYLES
   background-repeat: no-repeat;
 }
 
+.slick-slider {
+  margin-bottom:2rem;
+}
+
 .showcase {
-  color:#fff;
-  padding-top:150px;
+  padding:65px 0;
 }
 
-.showcase .slide-title {
-  color:#fff;
-  letter-spacing:8px;
-  line-height:48px;
-  margin:0 1.25rem 1.25rem;
-  font-size: 2.75rem;
-}
-.showcase .slide-content p {
-  font-size:120%;
-  margin:0 1.25rem 1.25rem;
-}
-.showcase .slide-link a {
-  margin:0 1.25rem 2.5rem;
-  font-size:120%;
-  font-weight:bold;  
-}
-.showcase .slide-content, .showcase .slide-link, .showcase .slide-image {
-  padding:0 2.5rem; 
-}
-
-.main-slider .main-slider {
+.main-slider .main-slide {
   position:relative;
 }
 
@@ -323,43 +309,112 @@ HOMEPAGE STYLES
 .main-slider .slick-arrow {
   display:block;
   position:absolute;
-  top:44%;
-  width: 65px;
-  height: 65px;
-  background: none;
+  top:100%;
+  width: 44px;
+  height: 44px;
+  background: #0078a0;
   font-size:0;
   line-height:0;  
   padding: 0;
   border: none;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   z-index:90;
 }
 .main-slider .slick-arrow:hover, .main-slider .slick-arrow:focus {
-  background: rgb(65,65,65);
-  background: rgba(255,255,255,.15)  
+  background: #000;
+  /*background: rgba(255,255,255,.15)  */
 }
   
 .main-slider .slick-prev {
-  left: 6%;
+  left: 0;
 }
 .main-slider .slick-prev:before {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 28px;
+    line-height: 44px;
     font-family: FontAwesome;    
     content: '\f104';
     margin-right:3px;
 }
 .main-slider .slick-next {
-  right: 6%;
+  right: 0;
 }
 .main-slider .slick-next:before {
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 28px;
+    line-height: 44px;
   font-family: FontAwesome;
   content: '\f105';
   margin-left:3px;
+}
+
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin:0 0 1rem;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    color:#000;
+}
+.slick-dots li button:before
+{
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '\f111';
+    text-align: center;
+
+    color: #bababa;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    color: #0078a0;
 }
 
 
@@ -649,17 +704,17 @@ FOOTER STYLES
   margin-top: 3em;
   }
 
-#contact-tools .row {
-  padding:2rem 0;
-  border-top: solid 1px #dadada;
+#contact-tools .ct-container {
+  padding:1rem 0;
+  border-top: solid 1px #f2f2f2;
 }
   
 #contact-tools .social {
-    border-right:1px solid #dadada;
     padding-bottom:1rem;
+    padding-left:1rem;
 }
+
 #contact-tools .subscribe {
-    border-left:1px solid #dadada;
     padding-bottom:1rem;
 }
   
@@ -669,8 +724,8 @@ FOOTER STYLES
    
 #contact-tools .newsletter-form {
     position:relative;
-    padding:0;
- 
+    border-left:1px solid #f2f2f2;
+    border-right:1px solid #f2f2f2;
 }
 
 #contact-tools .newsletter-form .newsletter-name, #contact-tools .newsletter-form .newsletter-email, #contact-tools .newsletter-form .newsletter-send {

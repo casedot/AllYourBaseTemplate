@@ -1,6 +1,6 @@
 					<footer class="footer" role="contentinfo">
 						<div id="contact-tools">
-							<div class="row">
+							<div class="ct-container row collapse">
 								<div class="large-2 medium-2 columns social">
 									<h3>Connect</h3>
 									<div class="social-icons clearfix">
@@ -13,9 +13,15 @@
 									</div>
 								</div>
 								<div class="large-8 medium-7 columns newsletter">
-									<div class="newsletter-form clearfix">
-										<h3>Join Our Mailing List</h3>
-										<?php echo do_shortcode( '[contact-form-7 id="34" title="Newsletter Signup Form"]' ); ?>
+									<div class="row">
+										<div class="large-12 medium-12 columns">
+											<div class="row">
+												<div class="newsletter-form large-12 medium-12 columns">
+														<h3>Join Our Mailing List</h3>
+														<?php echo do_shortcode( '[contact-form-7 id="34" title="Newsletter Signup Form"]' ); ?>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="large-2 medium-3 columns subscribe">
