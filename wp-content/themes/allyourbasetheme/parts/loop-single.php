@@ -11,8 +11,15 @@
 	</section> <!-- end article section -->
 						
 	<footer class="article-footer">
-		<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jointstheme') . '</span> ', ', ', ''); ?></p>	</footer> <!-- end article footer -->
+		<p class="tags"><?php the_tags('<span class="tags-title">' . __('TAGS', 'jointstheme') . '</span> ', '', ''); ?></p>	</footer> <!-- end article footer -->
 									
-	<?php comments_template(); ?>	
+	<div class="row">
+		<div class="post-comments large-9 medium-8 columns">
+			<?php comments_template(); ?>
+		</div>
+		<div class="post-sidebar large-3 medium-4 columns">
+			<?php get_sidebar(); ?>
+		</div>
+	
 													
 </article> <!-- end article -->
