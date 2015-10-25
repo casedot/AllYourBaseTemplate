@@ -4,7 +4,7 @@
 			
 				<div id="inner-content" class="row">
 				
-				    <div id="main" class="large-9 medium-8 columns first" role="main">
+				    <div id="main" class="large-8 medium-8 columns first" role="main">
 					    
 				    	<header>
 				    		<h1 class="page-title"><?php the_archive_title();?></h1>
@@ -16,9 +16,7 @@
 			
     				</div> <!-- end #main -->
     
-					<div class="large-3 medium-4 columns">
-	    				<?php get_sidebar(); ?>
-					</div>
+	    			<?php get_sidebar(); ?>
                 
                 </div> <!-- end #inner-content -->
                 
