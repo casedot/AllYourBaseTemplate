@@ -9,15 +9,7 @@
 	<?php // You can start editing here ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', '_jointstheme' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			?>
-		</h2>
+		<h2 class="comments-title">Comments</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">

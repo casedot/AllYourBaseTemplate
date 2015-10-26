@@ -19,7 +19,7 @@ single-bookmarks.php
 
 				<div id="inner-content" class="row">
 			
-					<div id="main" class="large-8 medium-8 columns first" role="main">
+					<div id="main" class="large-9 medium-8 columns first" role="main">
 					
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -32,8 +32,12 @@ single-bookmarks.php
 					    <?php endif; ?>
 			
 					</div> <!-- end #main -->
+					
+					<div id="main" class="large-3 medium-4 columns">
     
-					<?php get_sidebar(); ?>
+						<?php get_sidebar(); ?>
+					
+					</div>
 
 				</div> <!-- end #inner-content -->
     
