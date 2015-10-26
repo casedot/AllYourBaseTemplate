@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="row">
 			
-					<div id="main" class="large-10 medium-10 large-offset-1 medium-offset-1 large-centered medium-centered columns first" role="main">
+					<div id="main" class="large-8 medium-8 columns first" role="main">
 					
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -16,7 +16,9 @@
 
 					    <?php endif; ?>
 			
-					</div> <!-- end #main -->					
+					</div> <!-- end #main -->
+    
+					<?php get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
     
