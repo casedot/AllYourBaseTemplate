@@ -16,10 +16,7 @@
 				
 				    	<!-- To see additional archive styles, visit the /parts directory -->
 
-				    	<?php if (is_category( 'news' )) 
-						{ get_template_part( 'parts/loop', 'archive-grid' ); } 
-						else { get_template_part( 'parts/loop', 'archive' ); } 
-					?>					
+				    	<?php get_template_part( 'parts/loop', 'archive' ); ?>					
 			
     				</div> <!-- end #main -->					
                 
