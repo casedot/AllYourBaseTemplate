@@ -475,13 +475,16 @@ POSTS & CONTENT STYLES
   margin: 0 0 .5rem;
 }
 
+.entry-byline {
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+}
+
 .byline {
   color: #999;
   font-size: italic;
-  padding: 1px 0;
-  margin: 0; 
-  border-top: solid 1px #f2f2f2;
-  border-bottom: solid 1px #f2f2f2;
+  padding: 0;
+  margin: 0;   
   }
   
  .byline a {
