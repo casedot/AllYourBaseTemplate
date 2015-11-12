@@ -27,7 +27,6 @@
 	    	<p class="tags"><?php the_tags('<span class="tags-title">TAGS</span> ', '', ''); ?></p>
 		</footer> <!-- end article footer -->				    						
 	</article> <!-- end article -->
-	<br><br>
 
 <?php endwhile; ?>	
 					

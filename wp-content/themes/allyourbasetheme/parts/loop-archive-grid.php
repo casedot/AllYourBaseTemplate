@@ -1,8 +1,5 @@
 
 
-
-
-
 <?php foreach (array_chunk($posts, 3, true) as $posts) :  ?>
 
 
@@ -31,7 +28,17 @@
 
 					<?php if (has_excerpt()) { ?><div class="entry-subtitle subtitle"><?php the_excerpt(); ?> </div> <?php } ?>
 
-					<?php get_template_part( 'parts/content', 'byline' ); ?>				
+					<div class="entry-byline row">
+						<div class="large-10 medium-10 columns">
+							<?php get_template_part( 'parts/content', 'byline' ); ?>
+						</div>
+						<div class="large-2 medium-2 columns">					
+							<ul class="hlist right small">
+								<?php if (is_archive()) { ?><li><a href="<?php the_permalink() ?>"><i class="fa fa-share"></i></a></li> <?php } ?>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>				
 
 				</header> <!-- end article header -->	
 

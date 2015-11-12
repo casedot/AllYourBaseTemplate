@@ -1,13 +1,23 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
 	<header class="article-header">	
+		<p><?php the_post_thumbnail('full'); ?></p>
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 		<?php if (has_excerpt()) { ?><div class="entry-subtitle subtitle"><?php the_excerpt(); ?> </div> <?php } ?>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
+		<div class="entry-byline row">
+				<div class="large-8 medium-8 columns">
+					<?php get_template_part( 'parts/content', 'byline' ); ?>
+				</div>
+				<div class="large-4 medium-4 columns">					
+					<!--<ul class="hlist right small">
+						
+					</ul>-->
+				</div>
+				<div class="clearfix"></div>
+			</div>
     </header> <!-- end article header -->
 					
-    <section class="entry-content" itemprop="articleBody">
-		<p><?php the_post_thumbnail('full'); ?></p>
+    <section class="entry-content" itemprop="articleBody">		
 		<?php the_content(); ?>
 		<p class="normal align-center">
 			<i class="fa fa-diamond"></i>

@@ -40,7 +40,13 @@
 								<ul class="hlist left">
 									<li><a href="#"><i class="fa fa-home"></i>All Your Base Theme</a></li>
 									<li><a href="#"><i class="fa fa-globe"></i>Global Site</a></li>
-									<li><a href="#">Language <i class="fa fa-angle-double-down"></i></a></li>
+									<li>
+										<a href="#" data-dropdown="language-drop">Language <i class="fa fa-angle-down"></i></a>
+										<ul id="language-drop" class="tiny f-dropdown" data-dropdown-content>
+											<li><a href="#">English</a></li>
+											<li><a href="#">Spanish</a></li>
+										</ul>
+									</li>
 								</ul>
 							</div>
 							<div class="large-6 medium-6 columns">

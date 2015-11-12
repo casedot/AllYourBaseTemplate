@@ -17,6 +17,10 @@ body, h1, h2, h3, h4, h5, h6, .button, button, .top-bar-section ul li>a {
   max-width: 76.5rem;
 }*/
 
+.row .row {
+  margin: 0;
+}
+
 .button, button {
   background-color: #0078a0;
 }
@@ -25,11 +29,12 @@ body, h1, h2, h3, h4, h5, h6, .button, button, .top-bar-section ul li>a {
 }
 
 .button.secondary, button.secondary {
-  
+  background-color: #6a6a6a;
+  color: #fff;
 }
 .button.secondary:focus, .button.secondary:hover, button.secondary:focus, button.secondary:hover {
   background-color: #FF0202;
-    color: #fff;
+  color: #fff;
 }
 
 
@@ -118,7 +123,7 @@ a:link, a:visited:link {
   
 
 a:hover, a:focus {
-  color:#000;
+  color: #FF0202;
 }
   
 
@@ -197,6 +202,8 @@ LIST STYLES
 .hlist.right li:first-child a { border-left:none; }
 
 
+
+
 /*********************
 HEADER STYLES
 *********************/
@@ -215,6 +222,17 @@ HEADER STYLES
 .toolbar .fa {
     font-size:120%;
     margin-right:4px;
+}
+
+.toolbar ul#language-drop {
+  width: 110px;
+}
+.toolbar ul#language-drop li {
+  display: block;
+}
+.toolbar ul#language-drop li a {
+  display: block;
+  padding: 0 .5rem;
 }
 
 .header {
@@ -237,6 +255,8 @@ HEADER STYLES
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
+.site-logo img {height: 100%;}
 
 
 
@@ -273,19 +293,39 @@ NAVIGATION STYLES
     -moz-border-radius: 4px;
     border-radius: 4px;
   }
-   .top-bar-section ul li.active>a, .top-bar-section ul li>a:hover, .top-bar-section ul li>a:focus  {
-    color: #fff;
-    border-color: #fff;
-   }
+  .top-bar-section ul li.active>a, .top-bar-section ul li>a:hover, .top-bar-section ul li>a:focus  {
+  color: #fff;
+  border-color: #fff;
+  }
+  
+.left-off-canvas-menu, .right-off-canvas-menu {
+  background: #000;
+}
     
+   .off-canvas-list ul {
+    margin-left: 0; 
+    text-align: center;
+    }
+    ul.off-canvas-list li label {
+      padding: 1.25rem 1rem;
+      text-align: center;
+      background: none;
+      cursor: default;
+    }
+    ul.off-canvas-list li a {
+      border-bottom: 0px; 
+    }
+    ul.off-canvas-list li a:active, ul.off-canvas-list li a:hover {
+      background: none;  
+      color: #fff;
+    }
+        
+    .off-canvas-list ul .dropdown {
+      margin-left: 20px; }
 
-.off-canvas-list ul {
-  margin-left: 0; }
-  .off-canvas-list ul li a {
-    border-bottom: 0px; }
-  .off-canvas-list ul .dropdown {
-    margin-left: 20px; }
-
+.move-left .exit-off-canvas, .move-right .exit-off-canvas, .offcanvas-overlap .exit-off-canvas, .offcanvas-overlap-left .exit-off-canvas, .offcanvas-overlap-right .exit-off-canvas {
+  background: rgba(255,255,255,.74); 
+}
 
 /*********************
 HOMEPAGE STYLES
@@ -452,6 +492,24 @@ span.wpcf7-not-valid-tip:before {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+.date .post {
+  width: 28%;
+  margin: 2%;
+  float: left;
+}
+
+.date .post h2 a {  
+  padding: .5rem 1rem;
+  height: 10.5rem; 
+  border: solid 1px #f2f2f2;
+  overflow: hidden;
+}
+.date .post h2 a:hover, .date .post h2 a:focus {
+  border-color: #FF0202;
+}
+
+
 #content #inner-content {
   padding: 2.5rem 0rem; }
 
@@ -480,19 +538,19 @@ POSTS & CONTENT STYLES
   border-bottom: solid 1px #f2f2f2;
 }
 
-.byline {
+.entry-byline {
   color: #999;
   font-size: italic;
   padding: 0;
   margin: 0;   
   }
   
- .byline a {
+ .entry-byline a {
    color: #999;
    font-weight:bold; 
    border-color: #dedede !important;
  }
- .byline a:hover, .byline a:focus {
+ .entry-byline a:hover, .entry-byline a:focus {
    color: #000;
    text-decoration:underline; 
  }
@@ -570,7 +628,11 @@ POSTS & CONTENT STYLES
 
 .article-footer {
   padding: 1rem 0 0;
+  margin-bottom: 4rem;
 }
+.single .article-footer {
+  margin-bottom: 0;
+  }
 
 .entry-tags {
   border-bottom: solid 1px #f2f2f2;
@@ -814,11 +876,11 @@ FOOTER STYLES
     margin-right:2%;
 } 
 #contact-tools .newsletter-form .newsletter-email {
-    width:52%;
+    width:48%;
     margin-right:2%;
 }
 #contact-tools .newsletter-form .newsletter-send {
-    width:14%;
+    width:18%;
 }
 
 #contact-tools .newsletter-form input {
@@ -841,6 +903,11 @@ FOOTER STYLES
     border:solid 1px #6a6a6a;
     color: #fff;
 }
+#contact-tools .newsletter-form input[type="submit"]:hover {
+  background: #FF0202;
+  border:solid 1px #FF0202;
+}  
+  
 #contact-tools .newsletter-form img.ajax-loader {
     display: none;
 }
@@ -850,6 +917,7 @@ FOOTER STYLES
     padding:0 !important;
     margin:10px 0 0 !important;
     color: #bf1515;
+    font-size: .9em;
     text-align:left;
     border:none !important;;
     background:none !important;

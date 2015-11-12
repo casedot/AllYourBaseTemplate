@@ -34,6 +34,9 @@ function joints_scripts_and_styles() {
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
     
+    // Register responsive stylesheet
+    wp_enqueue_style( 'site-css-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '', 'all' );
+    
     // Add Font Awesome
      wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
      

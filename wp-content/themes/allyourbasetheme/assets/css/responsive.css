@@ -1,0 +1,55 @@
+/******************************************************************
+
+Stylesheet: Responsive Stylesheet
+
+******************************************************************/
+
+@media only screen and (max-width: 40em) { 
+  
+  .sidebar {    
+    padding: 1.5rem 0 0;
+    margin-bottom: 1.5rem;
+    border-right: none;
+    border-left: none;
+    border-bottom:solid 1px #f2f2f2;
+  }
+   
+  .post-sidebar {
+    padding: 0;
+    border-right: none;
+    border-left: none;
+    border-top:solid 1px #f2f2f2;
+  }
+
+  #contact-tools .social, #contact-tools .subscribe {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  #contact-tools .social .hlist.left, #contact-tools .subscribe .hlist.left {
+    float: none !important;
+    
+  }
+  #contact-tools .social .hlist.left li a, #contact-tools .subscribe .hlist.left li a {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  #contact-tools .newsletter-form {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-top:solid 1px #f2f2f2;
+    border-bottom:solid 1px #f2f2f2;
+  }
+  
+  #contact-tools .newsletter-form .newsletter-name, 
+  #contact-tools .newsletter-form .newsletter-email, 
+  #contact-tools .newsletter-form .newsletter-send {
+    float: none;
+    width: 250px;
+    margin: 0 auto 1rem;
+    padding: 0 1.5rem;
+  }
+  
+}

@@ -3,7 +3,7 @@
 		<ul class="title-area">
 			<!-- Title Area -->
 			<li class="name">
-				<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/logo.png" alt="Fisheye Consulting logo" /></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow" class="site-logo"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/logo.png" alt="Fisheye Consulting logo" /></a>
 			</li>
 		</ul>		
 		<section class="top-bar-section right">
@@ -14,9 +14,8 @@
 
 <div class="show-for-small-only">
 	<nav class="tab-bar">
-		<section class="middle tab-bar-section">
-			<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/logo.png" alt="Fisheye Consulting logo" /></a>
-			
+		<section class="left tab-bar-section">
+			<a href="<?php echo home_url(); ?>" rel="nofollow" class="site-logo"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/logo.png" alt="Fisheye Consulting logo" /></a>
 		</section>
 		<section class="right-small">
 			<a href="#" class="right-off-canvas-toggle menu-icon" ><span></span></a>
@@ -26,7 +25,7 @@
 						
 <aside class="right-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
-		<li><label>menu</label></li>
+		<li><label>menu<br /><i class="fa fa-diamond"></i></label></li>
 			<?php joints_off_canvas(); ?>    
 	</ul>
 </aside>
