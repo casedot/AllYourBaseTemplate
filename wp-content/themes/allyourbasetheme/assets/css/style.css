@@ -37,16 +37,20 @@ body, h1, h2, h3, h4, h5, h6, .button, button, .top-bar-section ul li>a {
   color: #fff;
 }
 
-
+.label {
+  font-size: inherit;
+}
 
 /*********************
 BACKGROUND STYLES
 *********************/
-.bg-pier, .bg-wheel, .bg-surfer, .bg-tower, .bg-carosell {
+.bgs {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+.bg-mountains { background-image: url(../images/backgrounds/mountain-layers.jpg); }
 .bg-pier { background-image: url(../images/backgrounds/california-pier.jpg); }
 .bg-wheel { background-image: url(../images/backgrounds/spectrum-ferris-wheel.jpg); }
 .bg-surfer { background-image: url(../images/backgrounds/socal-surfer-at-sunset.jpg); }  
@@ -95,6 +99,7 @@ BACKGROUND STYLES
   color: #fff;
 }
 
+
 /*********************
 ICON STYLES
 *********************/
@@ -108,6 +113,10 @@ ICON STYLES
   line-height: 80px;
   text-align: center;
   color: #6a6a6a;
+}
+
+.fa.large-icon {
+  font-size:3rem;
 }
 
 /*********************
@@ -137,6 +146,10 @@ H1, H2, H3, H4, H5 P STYLES
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
   
+.gigantic {
+  font-size: 4.5rem;
+}
+
 h1, .huge, .largetitle {
   font-size: 2.125rem; }
 
@@ -187,6 +200,12 @@ LIST STYLES
     margin:0;
 }
 
+.hlist.center li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: solid 1px #838383;
+}
+
 .hlist.left li a { 
     margin-right:10px;
     padding-right:10px;
@@ -198,7 +217,7 @@ LIST STYLES
     border-left:solid 1px #838383; 
 }
 
-.hlist.left li:last-child a { border-right:none; }
+.hlist.center li:last-child a, .hlist.left li:last-child a { border-right:none; }
 .hlist.right li:first-child a { border-left:none; }
 
 
@@ -208,20 +227,26 @@ LIST STYLES
 HEADER STYLES
 *********************/
 
+.toolbar {
+  background: #DDECF4;
+  background: rgba(255,255,255,.67);
+}
+
 .toolbar ul, .toolbar a, .toolbar p {
     font-size:.7rem;
 }
 
 .toolbar a {
-  color:#838383;
+  color: #444;
 } 
 .toolbar a:hover, .toolbar a:focus {
-  color:#000;
+  color: #000;
 } 
 
 .toolbar .fa {
     font-size:120%;
     margin-right:4px;
+    margin-left:4px;
 }
 
 .toolbar ul#language-drop {
@@ -240,6 +265,7 @@ HEADER STYLES
   padding: 1rem;
   z-index: 1;
   background: #000;
+  background: rgba(0,0,0,.83);
 }
 
 .header ul.off-canvas-list li {
@@ -258,6 +284,30 @@ HEADER STYLES
 
 .site-logo img {height: 100%;}
 
+
+.video-bg--home {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.video-bg__video, .video-bg-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  z-index: -10;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+.video-bg-overlay {
+  z-index: -1;
+  background: rgba(255,255,255,.2);
+}
 
 
 
@@ -286,16 +336,11 @@ NAVIGATION STYLES
   .top-bar-section ul li>a {
     font-size:1rem;
     text-transform: uppercase;
-    color: #fff;
-    color: rgba(255,255,255,0.65);
-    border:solid 1px transparent;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    color: #bdbdbd;
+    color: rgba(255,255,255,.74);
   }
   .top-bar-section ul li.active>a, .top-bar-section ul li>a:hover, .top-bar-section ul li>a:focus  {
   color: #fff;
-  border-color: #fff;
   }
   
 .left-off-canvas-menu, .right-off-canvas-menu {
@@ -314,6 +359,8 @@ NAVIGATION STYLES
     }
     ul.off-canvas-list li a {
       border-bottom: 0px; 
+      color: #bdbdbd;
+      color: rgba(255,255,255,.74);
     }
     ul.off-canvas-list li a:active, ul.off-canvas-list li a:hover {
       background: none;  
@@ -340,7 +387,7 @@ HOMEPAGE STYLES
 }
 
 .slick-slider {
-  margin-bottom:2rem;
+  margin-bottom: 3rem;
 }
 
 .showcase {
@@ -398,13 +445,14 @@ HOMEPAGE STYLES
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
     display: block;
     width: 100%;
     padding: 0;
     margin:0 0 1rem;
     list-style: none;
-    text-align: center;
+    text-align: center;    
+    line-height: 44px;
+    background: #fff;
 }
 .slick-dots li
 {
@@ -423,9 +471,11 @@ HOMEPAGE STYLES
     display: block;
     width: 20px;
     height: 20px;
+    margin: 0;
     padding: 5px;
     cursor: pointer;
     color: transparent;
+    line-height: 22px;
     border: 0;
     outline: none;
     background: transparent;
@@ -466,6 +516,38 @@ HOMEPAGE STYLES
     color: #0078a0;
 }
 
+.statement {
+  position: relative;
+}
+.statement h1 {
+  color: #fff;
+  font-weight: 300;
+}
+.statement h1 a {
+  position: relative;
+  display: block;
+  width: 560px;
+  border: solid 2px #fff;
+  border-radius: 50% 50%;
+  height: 560px;
+  padding: 8rem 0 0;
+  margin: 50px auto;
+  color: #fff;
+  box-shadow: 111px 0px 0px #000;
+  -webkit-box-shadow: 111px 0px 0px #000;
+  -moz-box-shadow: 111px 0px 0px #000; 
+  -webkit-transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -ms-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s; 
+}
+.statement h1 a:hover, .statement h1 a:focus {
+  color: #ff0202;
+  background: rgba(0,0,0,.5);
+  box-shadow: -111px 0px 0px #fff;
+  -webkit-box-shadow: -111px 0px 0px #fff;
+  -moz-box-shadow: -111px 0px 0px #fff; 
+}
 
 /*********************
 FORM STYLES
@@ -1115,6 +1197,13 @@ PRINT STYLES
 /**********
 Simple Classes
  **********/
+.text-white {
+  color: #fff;
+} 
+ 
+.text-black {
+  color: #000;
+} 
 .bold {
     font-weight: bold;
 }

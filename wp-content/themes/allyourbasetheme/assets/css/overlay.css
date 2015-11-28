@@ -1,0 +1,102 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(6,6,6);
+	background: rgba(0,0,0,.976);
+	z-index: 999;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	/*width: 80px;
+	height: 80px;*/
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 0 .5rem;
+	margin: 0;
+	font-size:56px;
+	line-height:1rem;
+	overflow: hidden;
+	border: none;
+	background: transparent;
+	/*background: url(../images/cross.png) no-repeat center center;*/
+	/*text-indent: 200%;
+	color: transparent;*/
+	outline: none;
+	z-index: 100;
+}
+.overlay .overlay-close:hover, .overlay .overlay-close:focus {
+	color: #ff0202;
+}
+
+.overlay .overlay-content  {
+	margin: 4rem 8rem 0;
+    padding: 4rem;
+    text-align: center;
+    border: solid 11px #dadada;
+}
+
+.overlay .overlay-content p, .overlay .overlay-content h2, .overlay .overlay-content h3 {
+	color: #dadada;	
+}
+
+.overlay .overlay-content div.flag-icons p {
+	margin: 2rem 0;
+}
+
+.overlay .overlay-content div.flag-icons a {
+	color: #dadada;
+	margin-bottom:1rem;
+}
+.overlay .overlay-content div.flag-icons a:hover {
+	color: #fff;
+}
+.overlay .overlay-content div.flag-icons .flag-icon {
+	font-size: 7rem;
+}
+
+.overlay .overlay-content div.social-icons a {
+	display: block;
+	width: 7rem;
+	padding: 1rem 0;
+	margin: 0 1rem;
+	border: none;
+	color: #fff;
+}
+.overlay .overlay-content div.social-icons a:hover, .overlay .overlay-content div.social-icons a:focus {
+	color: #ff0202;
+}
+
+/* Effects */
+.overlay-default {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-default.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media only screen and (max-width: 64.063em) { 
+	.overlay .overlay-content  {
+		margin: 4rem 5rem 0;
+		padding: 2rem;
+	}
+	.overlay .overlay-content div.flag-icons .flag-icon {
+		font-size: 5rem;
+	}
+}

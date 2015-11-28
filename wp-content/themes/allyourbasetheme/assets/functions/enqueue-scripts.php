@@ -16,8 +16,14 @@ function joints_scripts_and_styles() {
     // Adding Foundation scripts file in the footer
    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/vendor/foundation/js/foundation.min.js', array( 'jquery' ), '', true );
    
-    //Adding slicl - http://kenwheeler.github.io/slick
+    //Adding slick - http://kenwheeler.github.io/slick
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/slick/slick.js', array( 'jquery' ), '', true );
+    
+    //Adding fullscreen overlay - https://github.com/codrops/FullscreenOverlayStyles
+    wp_enqueue_script( 'overlay-js', get_template_directory_uri() . '/assets/js/overlay.js', array( 'jquery' ), '', true );
+    
+    //class helper
+    wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/assets/js/classie.js', array( 'jquery' ), '', true );
       
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '', true );
@@ -31,14 +37,22 @@ function joints_scripts_and_styles() {
     // Adding Slick rotator styles
     wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/slick/slick.css', array(), '', 'all' );
     
+    // Adding full screen overlay
+    wp_enqueue_style( 'overlay-css', get_template_directory_uri() . '/assets/css/overlay.css', array(), '', 'all' );        
+    
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
     
     // Register responsive stylesheet
     wp_enqueue_style( 'site-css-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '', 'all' );
     
+    //Adding vector world flags - https://github.com/lipis/flag-icon-css
+    wp_enqueue_style( 'flags-css', get_template_directory_uri() . '/assets/css/flag-icon.min.css' );
+    
     // Add Font Awesome
-     wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+    wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+     
+    
      
      
     

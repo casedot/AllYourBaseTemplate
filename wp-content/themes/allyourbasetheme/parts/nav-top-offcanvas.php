@@ -22,12 +22,3 @@
 		</section>
 	</nav>
 </div>
-						
-<aside class="right-off-canvas-menu show-for-small-only">
-	<ul class="off-canvas-list">
-		<li><label>menu<br /><i class="fa fa-diamond"></i></label></li>
-			<?php joints_off_canvas(); ?>    
-	</ul>
-</aside>
-			
-<a class="exit-off-canvas"></a>
