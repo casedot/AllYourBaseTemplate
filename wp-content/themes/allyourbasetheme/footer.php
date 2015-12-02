@@ -74,13 +74,13 @@
 					<div class="clearfix"></div>
 					<br />
 					<h2 class="text-center">Send us an Email</h2>
-					<div class="large-6 medium-6 columns">
-						<p class="text-right big">
+					<div class="large-6 medium-12 columns">
+						<p class="big">
                           <a href="#">hello@emailaddress.com</a>
 						</p>
 					</div>
-					<div class="large-6 medium-6 columns">
-						<p class="text-left big">
+					<div class="large-6 medium-12 columns">
+						<p class="big">
                           <a href="#">holla@emailaddress.com</a>
 						</p>
 					</div>

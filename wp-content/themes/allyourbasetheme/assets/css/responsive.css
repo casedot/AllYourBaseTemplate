@@ -5,7 +5,6 @@ Stylesheet: Responsive Stylesheet
 ******************************************************************/
 
 @media only screen and (max-width: 40em) { 
-  
   .sidebar {    
     padding: 1.5rem 0 0;
     margin-bottom: 1.5rem;
@@ -52,7 +51,50 @@ Stylesheet: Responsive Stylesheet
     padding: 0 1.5rem;
   }
   
-  #contact-tools .social a, #contact-tools .subscribe a {
+  #contact-tools .social a{
+      font-size: 1.75rem;
+  }
+  #contact-tools .subscribe a {
       font-size: 1.25rem;
+  }
+  
+  .statement h1 a {
+    width: auto;
+    border: solid 2px #fff;
+    border-radius: 0;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;  
+  }
+  .statement h1 a:hover, .statement h1 a:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  
+  .showcase {
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .showcase {
+    height: 18rem;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .showcase {
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 90.063em) { 
+  .showcase {
+    height: 24rem;
   }
 }

@@ -1,0 +1,8 @@
+Load the zip file and the installer.php file to your website root (best if the directory is empty).  
+
+Navigate to installer.php in your browser and follow the steps, entering your database connection information.  
+You can also change the site URL at this step, so type in your website URL and change the admin credentials (DEFINITELY DO THIS).
+
+Current admin login information is:
+username: aybadmin
+password: SteamPunkAllStar11!!

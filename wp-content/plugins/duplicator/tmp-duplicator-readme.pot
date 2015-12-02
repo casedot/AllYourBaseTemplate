@@ -1,0 +1,194 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Duplicator"
+msgstr ""
+
+#. Short description.
+msgid "Duplicate, clone, backup, move and transfer an entire site from one location to another."
+msgstr ""
+
+#. Screenshot description.
+msgid "Main Interface for all Packages"
+msgstr ""
+
+#. Screenshot description.
+msgid "Create Package Step 1"
+msgstr ""
+
+#. Screenshot description.
+msgid "Create Package Step 2"
+msgstr ""
+
+#. Screenshot description.
+msgid "Build Process"
+msgstr ""
+
+#. Screenshot description.
+msgid "Installer Screen"
+msgstr ""
+
+#. Found in description header.
+msgid "Quick Video Demo"
+msgstr ""
+
+#. Found in description header.
+msgid "Disclaimer"
+msgstr ""
+
+#. Found in description header.
+msgid "Developers"
+msgstr ""
+
+#. Found in description header.
+msgid "Please Note"
+msgstr ""
+
+#. Found in description header.
+msgid "Duplicator Pro"
+msgstr ""
+
+#. Found in description header.
+msgid "Active Contributors"
+msgstr ""
+
+#. Found in description header.
+msgid "Other Contributors"
+msgstr ""
+
+#. Found in description header.
+msgid "Donate"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.easywebdesigntutorials.com\">Paal Joachim Romdahl</a> (Training)"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.web266.de\">Hans-M. Herbrand</a> (German) "
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://nicolasricher.fr\">Nicolas Richer</a> (French)"
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.canaryas.com\">Emilio De Fez</a> (Spanish) "
+msgstr ""
+
+#. Found in description list item.
+msgid "<a href=\"http://www.arsnovasolucoes.com\">Marco Andrei Kichalowsky</a> (Portuguese)"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Duplicator gives WordPress administrators the ability to migrate, copy or clone a site from one location to another. The plugin also serves as a simple backup utility.    The Duplicator supports both serialized and base64 serialized string replacement.  If you need to move WordPress or backup WordPress this plugin can help simplify the process. For complete details visit <a href=\"http://lifeinthegrid.com/\">lifeinthegrid.com</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "http://www.youtube.com/watch?v=yZ7pHmR9JC8"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This plugin does require above average technical knowledge.  If you plan to move WordPress or backup WordPress please use it at your own risk and do not forget to back up your files and databases beforehand with other backup system.  Please do not attempt to use the plugin if you're new to WordPress or have a limited technical background.  Please seek out professional help if your in question of anything.  If you need to move WordPress or backup WordPress and you don't have a firm grasp on using WordPress then you can get additional help from the Duplicator <a href=\"http://lifeinthegrid.com/labs/duplicator/\">resources page</a> ."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This tool is great to move WordPress or backup Wordpress sites and for pulling a production site down onto your local machine for testing and validation. It also works good for developing locally and then pushing up to a production server for a first time site release."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The underlying logic to backup WordPress, move WordPress and transfer WordPress are very complex. It's impossible to know how each system is setup; this is why your feedback is important to us.  Thanks for helping us to make WordPress the best blogging platform in the world."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Take Duplicator to the next level with the <a href=\"http://snapcreek.com/duplicator\">premium version</a> of the plugin."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"<li><a href=\"http://www.easywebdesigntutorials.com\">Paal Joachim Romdahl</a> (Training)</li>\n"
+"<li><a href=\"http://www.web266.de\">Hans-M. Herbrand</a> (German) </li>\n"
+"<li><a href=\"http://nicolasricher.fr\">Nicolas Richer</a> (French)</li>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"<li><a href=\"http://www.canaryas.com\">Emilio De Fez</a> (Spanish) </li>\n"
+"<li><a href=\"http://www.arsnovasolucoes.com\">Marco Andrei Kichalowsky</a> (Portuguese)</li>\n"
+"Jonathan Foote, Tomas Gurny, Aaron Crawford"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enjoy using <em>Duplicator</em>? Please consider <a href=\"http://lifeinthegrid.com/partner/\">making a donation</a> to support the project's continued development."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload <code>duplicator</code> folder to the <code>/wp-content/plugins/</code> directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Click on the Duplicator link from the main menu"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Check out the help by clicking the help icon and create your first package."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "The Duplicator requires php 5.3 or higher."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid ""
+"Please see the following url:\n"
+"http://lifeinthegrid.com/duplicator-log"
+msgstr ""
+
+#. Found in faq header.
+msgid "I'm having issues getting the plugin to work what should I do?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Are there any videos I can watch?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Where can I get more information and support for this plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I test this in a non-production environment?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Is this plugin compatible with WordPress Multi-Site (MU)?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "See the <a href=\"http://lifeinthegrid.com/duplicator-faq\">FAQs</a> page for a detailed rundown of common issues"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes.  Please see the [tutorial section](http://lifeinthegrid.com/duplicator-tutorials] on the user guide for videos."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Visit the <a href=\"http://lifeinthegrid.com/duplicator\">Duplicator Page</a> at lifeinthegrid.com"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes. Put WordPress on <a href=\"http://lifeinthegrid.com/xampp\">your computer</a> by watching the video below."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "http://www.youtube.com/watch?v=-hF7FbTQIkk"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No.  Hopefully in future versions we will support MU"
+msgstr ""

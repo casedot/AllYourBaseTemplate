@@ -2,7 +2,7 @@
 	
 	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">					
 		<header class="article-header">
-			<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><span class="entry-thumb"><?php the_post_thumbnail('full'); ?></span><br /><?php the_title(); ?></a></h2>
+			<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><span class="entry-thumb"><?php the_post_thumbnail('large'); ?></span><br /><?php the_title(); ?></a></h2>
 			<?php if (has_excerpt()) { ?><div class="entry-subtitle subtitle"><?php the_excerpt(); ?> </div> <?php } ?>
 			<div class="entry-byline row">
 				<div class="large-8 medium-8 columns">

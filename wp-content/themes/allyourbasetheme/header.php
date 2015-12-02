@@ -62,7 +62,7 @@
 						
 						<?php if ( is_front_page() ) : ?>
 						<div class="statement">
-							<h1 class="text-center"><a href="/dark-matter-is-a-hypothetical-kind-of-matter/"><span class="gigantic italic">Dark Matter </span><br />
+							<h1 class="text-center"><a href="/dark-matter-is-a-hypothetical-kind-of-matter/"><span class="gigantic bold">Dark Matter </span><br />
 							<span class="big subtitle secondary label">a hypothetical kinda of matter</span><br /><span class="big"><i class="fa fa-diamond text-white"></i></span></a></h1>							 
 						</div>
 						<!--<div class="video-bg-overlay"></div>-->
